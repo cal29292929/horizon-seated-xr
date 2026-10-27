@@ -1,0 +1,61 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Getting Started",
+      "description": "Verify-first guardrails, project scaffolding, and the metavr CLI.",
+      "skills": ["hz-quest-verify-first", "hz-new-project-creation", "metavr-cli"]
+    },
+    {
+      "title": "Unity",
+      "description": "Building Meta VR and Horizon OS apps in Unity.",
+      "skills": [
+        "hz-unity-meta-core-sdk",
+        "hz-unity-platform-sdk",
+        "hz-unity-code-review",
+        "hz-unity-meta-quest-ui",
+        "hz-unity-placement",
+        "hz-unity-fbx-import",
+        "hz-unity-tmp-resources",
+        "hz-unity-project-analyzer",
+        "hz-unity-device-readiness",
+        "hz-unity-face-tracking",
+        "hz-unity-meta-interaction-sdk",
+        "hz-unity-meta-mixed-reality-utility-kit",
+        "hz-unity-meta-movement-sdk-retargeting",
+        "hz-unity-passthrough-camera-access"
+      ]
+    },
+    {
+      "title": "Spatial & Native SDKs",
+      "description": "Standard Android, Spatial SDK, MetaVrx, React Native, and Horizon Platform SDK integration.",
+      "skills": ["hz-spatial-sdk", "hz-platform-sdk", "hz-psdk-integration", "hz-android-2d-porting", "hz-metavrx-layout-sdk", "hz-metavrx-ui-set", "hz-react-native-expo"]
+    },
+    {
+      "title": "WebXR",
+      "description": "WebXR experiences with the Immersive Web SDK.",
+      "skills": ["hz-iwsdk-webxr"]
+    },
+    {
+      "title": "Performance & Debugging",
+      "description": "Profiling, tracing, and debugging Meta VR apps.",
+      "skills": ["hz-perfetto-debug", "hz-simpleperf-debug", "hz-vr-debug", "hz-xr-simulator-control", "hz-xr-simulator-install-and-configure"]
+    },
+    {
+      "title": "Design",
+      "description": "Comfort, accessibility, and spatial UX review.",
+      "skills": ["hz-immersive-designer"]
+    },
+    {
+      "title": "Ship",
+      "description": "Store submission and SDK upgrades.",
+      "skills": ["hz-store-submit", "hz-store-pwa", "hz-api-upgrade", "hz-unity-sdk-upgrade"]
+    },
+    {
+      "title": "Other Devices",
+      "description": "Targeting non-Quest Meta hardware.",
+      "skills": ["portal"]
+    }
+  ]
+}

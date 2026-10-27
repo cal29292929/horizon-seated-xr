@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "estimation_label": "deterministic_quest3_webxr_simulation",
+  "execution_mode": "standalone_offline_capable_with_optional_mcp",
+  "workflow_steps": [
+    "INTENT",
+    "PLAN",
+    "RESEARCH",
+    "COMPOSE",
+    "EVALUATE",
+    "PROPOSE",
+    "CONFIRM",
+    "APPLY"
+  ],
+  "step_count": 8,
+  "plan": {
+    "run_id": "SCMR-RUN-0042",
+    "bpm": 76,
+    "time_signature": "4/4",
+    "bars_in_loop": 16,
+    "loop_duration_s": 50.53,
+    "focus_block_minutes": 10,
+    "nodes": [
+      {
+        "id": "stem_pad_ambient",
+        "label": "Ambient Pad Orb",
+        "reach_m": 0.42,
+        "neck_pitch_deg": -4.0,
+        "height_m": 0.98
+      },
+      {
+        "id": "stem_pulse_bass",
+        "label": "Warm Pulse Node",
+        "reach_m": 0.48,
+        "neck_pitch_deg": -2.5,
+        "height_m": 1.02
+      },
+      {
+        "id": "stem_chime_bell",
+        "label": "Focus Bell Harmonics",
+        "reach_m": 0.51,
+        "neck_pitch_deg": 3.0,
+        "height_m": 1.08
+      },
+      {
+        "id": "copilot_confirm_pill",
+        "label": "Headset Consent Pill",
+        "reach_m": 0.44,
+        "neck_pitch_deg": -6.0,
+        "height_m": 0.95
+      }
+    ]
+  },
+  "plan_digest": "faf6c8a60011b9d88de0dd32a2ed8fb9b8951344b19437848938ef758fa1ba25",
+  "headset_consent_verified": true,
+  "ergonomics": {
+    "all_nodes_pass_airplane_tray_envelope": true,
+    "node_validations": [
+      {
+        "node_id": "stem_pad_ambient",
+        "ok": true,
+        "profile": "AIRPLANE_TRAY",
+        "max_reach_m": 0.55,
+        "violations": []
+      },
+      {
+        "node_id": "stem_pulse_bass",
+        "ok": true,
+        "profile": "AIRPLANE_TRAY",
+        "max_reach_m": 0.55,
+        "violations": []
+      },
+      {
+        "node_id": "stem_chime_bell",
+        "ok": true,
+        "profile": "AIRPLANE_TRAY",
+        "max_reach_m": 0.55,
+        "violations": []
+      },
+      {
+        "node_id": "copilot_confirm_pill",
+        "ok": true,
+        "profile": "AIRPLANE_TRAY",
+        "max_reach_m": 0.55,
+        "violations": []
+      }
+    ]
+  },
+  "frame_budget_90hz": {
+    "target_hz": 90,
+    "budget_ms": 11.111,
+    "p50_ms": 9.4,
+    "p95_ms": 10.1,
+    "draw_calls": 68,
+    "within_budget": true,
+    "quality_tier": "TIER_0_FULL_SHADERS"
+  },
+  "pipeline_provenance": {
+    "stage1_design_model": "claude-opus-5-5",
+    "stage1_session_id": "dce89928-f730-4cd9-af46-2d06e98e9dae",
+    "stage2_review_model": "gpt-6-luna",
+    "stage2_codex_session_id": "01a17dc4-696d-7f03-94a0-2ab68db3d93e",
+    "stage3_impl_model": "preview/Kimi-K2.7-Code",
+    "stage3_completion_id": "chatcmpl-b89ddc9effa18a0f"
+  }
+}

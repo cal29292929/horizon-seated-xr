@@ -1,0 +1,62 @@
+{
+  "stage": "01_design_opus55",
+  "hackathon": "08-meta-vr-start",
+  "model": "claude-opus-5-5",
+  "started_at_jst": "2026-10-27T23:24:30+09:00",
+  "completed_at_jst": "2026-10-27T23:29:46+09:00",
+  "session_id": "dce89928-f730-4cd9-af46-2d06e98e9dae",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 13715,
+    "cache_read_input_tokens": 2218,
+    "output_tokens": 33620,
+    "output_tokens_details": {
+      "thinking_tokens": 4995
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 13715,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 33620,
+        "cache_read_input_tokens": 2218,
+        "cache_creation_input_tokens": 13715,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 13715
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 33620,
+      "cacheReadInputTokens": 2218,
+      "cacheCreationInputTokens": 13715,
+      "webSearchRequests": 0,
+      "costUSD": 0.7825715999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 4995,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 13715,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "output_file": "/workspace/hackathons/08-meta-vr-start/DESIGN_OPUS55.md",
+  "output_bytes": 67423
+}
