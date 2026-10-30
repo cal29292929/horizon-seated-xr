@@ -15,7 +15,9 @@
  */
 
 import { AssetType, defineAssets } from '@iwsdk/core';
+import consentPill from './scene-assets/consent-pill.scene-asset.js';
 import demoCube from './scene-assets/demo-cube.scene-asset.js';
+import stemOrb from './scene-assets/stem-orb.scene-asset.js';
 
 // Build every public URL from BASE_URL so the runtime, the managed editor, and
 // subpath builds all resolve the same file.
@@ -58,4 +60,6 @@ export default defineAssets({
     name: 'Controller Input HUD',
   },
   'demo-cube': demoCube,
+  'stem-orb': stemOrb,
+  'consent-pill': consentPill,
 });

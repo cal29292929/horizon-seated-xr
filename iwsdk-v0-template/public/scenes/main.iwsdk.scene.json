@@ -71,24 +71,8 @@
       }
     },
     {
-      "id": "demo-cube",
-      "name": "Demo Cube",
-      "content": {
-        "type": "asset",
-        "asset": "demo-cube"
-      },
-      "transform": {
-        "position": [0, 1, -1.7]
-      },
-      "components": {
-        "RayInteractable": {},
-        "OneHandGrabbable": {},
-        "DemoCube": {}
-      }
-    },
-    {
       "id": "welcome-panel",
-      "name": "Welcome Panel",
+      "name": "Conductor Panel",
       "content": {
         "type": "asset",
         "asset": "welcome-panel"
@@ -108,24 +92,76 @@
       }
     },
     {
-      "id": "input-hud",
-      "name": "Controller Input HUD",
+      "id": "consent-pill",
+      "name": "Headset Consent Pill",
       "content": {
         "type": "asset",
-        "asset": "input-hud"
+        "asset": "consent-pill"
       },
       "transform": {
-        "position": [1.7, 1.35, -1.75],
-        "rotationDeg": [0, -44, 0],
-        "scale": 0.4
+        "position": [-0.283, 0.95, -0.337]
       },
       "components": {
         "RayInteractable": {},
-        "ScreenSpace": {
-          "top": "20px",
-          "right": "20px",
-          "width": "25vw",
-          "height": "40%"
+        "ConsentPill": {}
+      }
+    },
+    {
+      "id": "stem-pad-ambient",
+      "name": "Ambient Pad Orb",
+      "content": {
+        "type": "asset",
+        "asset": "stem-orb"
+      },
+      "transform": {
+        "position": [-0.116, 0.98, -0.404]
+      },
+      "components": {
+        "RayInteractable": {},
+        "StemOrb": {
+          "stemIndex": 0,
+          "toneHz": 220
+        }
+      }
+    },
+    {
+      "id": "stem-pulse-bass",
+      "name": "Warm Pulse Node",
+      "content": {
+        "type": "asset",
+        "asset": "stem-orb"
+      },
+      "transform": {
+        "position": [0.083, 1.02, -0.473]
+      },
+      "components": {
+        "RayInteractable": {},
+        "StemOrb": {
+          "stemIndex": 1,
+          "toneHz": 55
+        }
+      }
+    },
+    {
+      "id": "stem-chime-bell",
+      "name": "Focus Bell Harmonics",
+      "content": {
+        "type": "asset",
+        "asset": "stem-orb"
+      },
+      "transform": {
+        "position": [0.3, 1.08, -0.413]
+      },
+      "components": {
+        "AudioSource": {
+          "src": "./audio/chime.mp3",
+          "maxInstances": 3,
+          "playbackMode": "fade-restart"
+        },
+        "RayInteractable": {},
+        "StemOrb": {
+          "stemIndex": 2,
+          "toneHz": 1318.5
         }
       }
     },

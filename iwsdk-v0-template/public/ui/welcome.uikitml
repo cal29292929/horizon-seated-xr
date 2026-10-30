@@ -1,6 +1,10 @@
 <!--
-  Panel, Divider, Button, ButtonIcon, and ButtonLabel come from the bundled
-  Horizon kit. RectangleGoggles and LogIn are bundled Lucide icon components.
+  Conductor panel for SeatedConductor MR, adapted from the template's
+  welcome panel. Panel, Divider, Button, ButtonIcon, and ButtonLabel come
+  from the bundled Horizon kit. Element ids are the contract with
+  PanelSystem in src/panel.ts: xr-button / exit-button (template),
+  session-button / session-label, consent-state, session-state, and one
+  stem-*-state line per stem.
 -->
 <style>
   @font-face {
@@ -62,6 +66,32 @@
     color: rgba(255, 255, 255, 0.9);
   }
 
+  .state-line {
+    color: #272727;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .state-line:dark {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .ergo-line {
+    color: #767676;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .ergo-line:dark {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
   .button {
     justify-content: flex-start;
     margin-left: 24px;
@@ -76,13 +106,34 @@
 </style>
 <Panel class="panel-root">
   <div class="panel-content">
-    <div class="heading">Hello, Immersive Web!</div>
+    <div class="heading">SeatedConductor MR</div>
     <Divider></Divider>
     <div class="sub-heading">
-      Build interactive browser, mixed-reality, and virtual-reality experiences
-      with Immersive Web SDK.
+      Hands-first seated focus studio. BPM 76, 4/4, D dorian. Pinch an orb to
+      toggle its stem.
+    </div>
+    <div id="consent-state" class="state-line">
+      Stems locked - pinch the amber Headset Consent Pill (front-left) once to
+      unlock.
+    </div>
+    <div id="stem-pad-state" class="state-line">Ambient Pad Orb: OFF (locked)</div>
+    <div id="stem-bass-state" class="state-line">Warm Pulse Node: OFF (locked)</div>
+    <div id="stem-chime-state" class="state-line">
+      Focus Bell Harmonics: OFF (locked)
+    </div>
+    <div id="session-state" class="state-line">
+      Focus session idle - 10 min block, seated, no locomotion needed.
+    </div>
+    <div class="ergo-line">
+      Ergonomics verified - all targets within the 0.55 m seated reach
+      envelope - frame budget 90 Hz, p95 10.1 ms - Plan SCMR-RUN-0042
     </div>
   </div>
+  <Button id="session-button" class="button">
+    <ButtonLabel id="session-label" class="button-label">
+      Start Focus Session
+    </ButtonLabel>
+  </Button>
   <Button id="xr-button" class="button">
     <ButtonIcon>
       <RectangleGoggles></RectangleGoggles>

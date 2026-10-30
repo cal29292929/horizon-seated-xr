@@ -17,5 +17,6 @@
 import { defineComponents } from '@iwsdk/core';
 import { DemoCube } from './demo-cube-component.js';
 import { Robot } from './robot-component.js';
+import { ConsentPill, StemOrb } from './seated-conductor-component.js';
 
-export default defineComponents([Robot, DemoCube]);
+export default defineComponents([Robot, DemoCube, StemOrb, ConsentPill]);

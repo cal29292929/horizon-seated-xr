@@ -19,6 +19,7 @@ import projectOptions from 'virtual:iwsdk-project';
 import { ControllerInputSystem } from './input.js';
 import { PanelSystem } from './panel.js';
 import { RobotSystem } from './robot.js';
+import { SeatedConductorSystem } from './seated-conductor.js';
 
 World.create(
   document.getElementById('scene-container') as HTMLDivElement,
@@ -27,4 +28,5 @@ World.create(
   world.registerSystem(RobotSystem);
   world.registerSystem(PanelSystem);
   world.registerSystem(ControllerInputSystem);
+  world.registerSystem(SeatedConductorSystem);
 });
